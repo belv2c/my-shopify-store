@@ -6,7 +6,7 @@ import Context from '~/context/StoreContext'
 
 const client = Client.buildClient(
   {
-    storefrontAccessToken: process.env.SHOPIFY_ACCESS_TOKEN,
+    storefrontAccessToken: process.env.GATSBY_SHOPIFY_ACCESS_TOKEN,
     domain: `${process.env.SHOP_NAME}.myshopify.com`,
   },
   fetch
