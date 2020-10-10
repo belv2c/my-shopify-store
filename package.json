@@ -45,6 +45,7 @@
     "build": "gatsby build",
     "dev": "gatsby develop",
     "start": "npm run dev",
+    "gatsby": "gatsby",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
