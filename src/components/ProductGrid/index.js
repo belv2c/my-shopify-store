@@ -42,7 +42,7 @@ const ProductGrid = () => {
 
   const getPrice = price =>
     Intl.NumberFormat(undefined, {
-      currency: checkout.currencyCode ? checkout.currencyCode : 'EUR',
+      currency: checkout.currencyCode ? checkout.currencyCode : 'USD',
       minimumFractionDigits: 2,
       style: 'currency',
     }).format(parseFloat(price ? price : 0))
@@ -54,29 +54,29 @@ const ProductGrid = () => {
           ({
             node: {
               id,
-              handle,
-              title,
-              images: [firstImage],
-              variants: [firstVariant],
+            handle,
+            title,
+            images: [firstImage],
+            variants: [firstVariant],
             },
           }) => (
-            <Product key={id}>
-              <Link to={`/product/${handle}/`}>
-                {firstImage && firstImage.localFile && (
-                  <Img
-                    fluid={firstImage.localFile.childImageSharp.fluid}
-                    alt={handle}
-                  />
-                )}
-              </Link>
-              <Title>{title}</Title>
-              <PriceTag>{getPrice(firstVariant.price)}</PriceTag>
-            </Product>
-          )
+              <Product key={id}>
+                <Link to={`/product/${handle}/`}>
+                  {firstImage && firstImage.localFile && (
+                    <Img
+                      fluid={firstImage.localFile.childImageSharp.fluid}
+                      alt={handle}
+                    />
+                  )}
+                </Link>
+                <Title>{title}</Title>
+                <PriceTag>{getPrice(firstVariant.price)}</PriceTag>
+              </Product>
+            )
         )
       ) : (
-        <p>No Products found!</p>
-      )}
+          <p>No Products found!</p>
+        )}
     </Grid>
   )
 }
