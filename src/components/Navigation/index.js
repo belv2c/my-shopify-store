@@ -3,7 +3,8 @@ import reduce from 'lodash/reduce'
 import PropTypes from 'prop-types'
 
 import StoreContext from '~/context/StoreContext'
-import { CartCounter, Container, MenuLink, Wrapper } from './styles'
+import { CartCounter, Container, MenuLink, Wrapper, Logo } from './styles'
+import fallLogoDesign from '../../../resources/fallLogoDesign.png'
 
 const useQuantity = () => {
   const {
@@ -20,7 +21,7 @@ const Navigation = ({ siteTitle }) => {
   return (
     <Wrapper>
       <Container>
-        <MenuLink to="/">{siteTitle}</MenuLink>
+        <MenuLink to="/"><Logo src={fallLogoDesign} alt="Logo" /></MenuLink>
         <MenuLink to="/cart">
           {hasItems && <CartCounter>{quantity}</CartCounter>}
           Cart

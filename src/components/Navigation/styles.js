@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
 export const Container = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-start;
   padding: 1.45rem;
   margin: -6px auto;
   max-width: 1500px;
@@ -49,5 +49,9 @@ export const CartCounter = styled.span`
     font-size: 1rem;
     margin-left: 10px;
   }
+`
 
+export const Logo = styled.img`
+  width: 140px;
+  margin-top: -10px;
 `

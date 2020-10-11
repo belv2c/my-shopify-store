@@ -21,7 +21,7 @@ export const GlobalStyle = props => (
         font-family: Helvetica, Arial, serif;
         -ms-text-size-adjust: 100%;
         -webkit-text-size-adjust: 100%;
-        background: #e6e6e6;
+        background: #e0e0df;
       }
     `}
   />
