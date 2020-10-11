@@ -18,15 +18,16 @@ export const GlobalStyle = props => (
         margin: 0;
       }
       html {
-        font-family: sans-serif;
+        font-family: Helvetica, Arial, serif;
         -ms-text-size-adjust: 100%;
         -webkit-text-size-adjust: 100%;
+        background: #e6e6e6;
       }
     `}
   />
 )
 
-export const Img = styled(Image)`
+export const Img = styled(Image) `
   max-width: 100 %;
   margin-left: 0;
   margin-right: 0;
