@@ -7,8 +7,8 @@ import ProductGrid from '~/components/ProductGrid'
 const IndexPage = () => (
   <>
   <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-  <h1>Hi people</h1>
-  <p>It's an online store!!!</p>
+  <h1>Store</h1>
+  <p>Apparel &amp; Merch</p>
   <ProductGrid />
   <Link to="/page-2/">Go to page 2</Link>
   </>

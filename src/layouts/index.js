@@ -11,7 +11,7 @@ import Navigation from '~/components/Navigation'
 const Wrapper = styled.div`
   margin: 0 auto;
   max-width: 960px;
-  padding: 0px 1.0875rem 1.45rem;
+  padding: 39px 1.0875rem 1.45rem;
 `
 
 const Layout = ({ children }) => {
@@ -30,15 +30,15 @@ const Layout = ({ children }) => {
         `}
         render={data => (
           <>
-            <Navigation siteTitle={data.site.siteMetadata.title} />
-            <Wrapper>
-              {children}
-              <footer>
-                © {new Date().getFullYear()}, Built with
+          <Navigation siteTitle={data.site.siteMetadata.title} />
+          <Wrapper>
+            {children}
+            <footer>
+              © {new Date().getFullYear()}, Built with
                 {` `}
-                <a href="https://www.gatsbyjs.org">Gatsby</a>
-              </footer>
-            </Wrapper>
+              <a href="https://www.gatsbyjs.org">Gatsby</a>
+            </footer>
+          </Wrapper>
           </>
         )}
       />

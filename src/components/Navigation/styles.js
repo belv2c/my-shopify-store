@@ -31,6 +31,7 @@ export const MenuLink = styled(Link) `
 
   @media (max-width: ${breakpoints.s}px) {
     font-size: 1rem;
+    margin-right: 30px;
   }
 `
 
@@ -38,9 +39,15 @@ export const CartCounter = styled.span`
   background-color: white;
   color: #663399;
   border-radius: 20px;
-  padding: 0 10px;
+  padding: 0px 10px;
   font-size: 1.2rem;
-  float: right;
-  margin: -10px;
+  margin: -71px;
+  margin-left: -27px;
   z-index: 20;
+
+  @media (max-width: ${breakpoints.s}px) {
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+
 `
