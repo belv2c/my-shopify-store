@@ -4,8 +4,14 @@ import { Link } from 'gatsby'
 import { breakpoints } from '../../utils/styles'
 
 export const Wrapper = styled.div`
-  background: rebeccapurple;
-  margin-bottom: 1.45rem;
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  background: rgba(0,0,0,.96);
+  transition: all .4s ease;
+  z-index: 7;
+  transform: translateZ(0);
 `
 
 export const Container = styled.div`
@@ -13,18 +19,18 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: baseline;
   padding: 1.45rem;
-  margin: 0 auto;
-  max-width: 960px;
+  margin: -6px auto;
+  max-width: 1500px;
 `
 
-export const MenuLink = styled(Link)`
+export const MenuLink = styled(Link) `
   color: white;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: bold;
 
   @media (max-width: ${breakpoints.s}px) {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 `
 
