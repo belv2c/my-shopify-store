@@ -60,6 +60,10 @@ export const GridLeft = styled.div`
 
 export const GridRight = styled.div`
   grid-area: right;
+
+  @media (max-width: ${breakpoints.l}px) {
+    text-align: center;
+  }
 `
 
 export const MainContent = styled.main`
