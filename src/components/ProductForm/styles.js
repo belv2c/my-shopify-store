@@ -32,4 +32,22 @@ export const Select = styled.select`
     margin: 9px 0px;
     cursor: pointer;
     margin-right: 19px;
+    -webkit-border-radius: 0px;
+
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	 -o-appearance: none;
+        appearance: none;
+        
+        &:after {
+            font-family: FontAwesome;
+            content: '\f107';
+            font-size: 28px;
+            position: absolute;
+            top: 12px;
+            right: 20px;
+            color: #434B67;
+            pointer-events: none;
+        }
 `
