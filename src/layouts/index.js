@@ -10,8 +10,7 @@ import Navigation from '~/components/Navigation'
 
 const Wrapper = styled.div`
   margin: 0 auto;
-  max-width: 960px;
-  padding: 39px 1.0875rem 1.45rem;
+  padding: 66px 1.0875rem 1.45rem;
 `
 
 const Layout = ({ children }) => {

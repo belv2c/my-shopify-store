@@ -31,9 +31,9 @@ export const Img = styled(Image) `
   max-width: 100 %;
   margin-left: 0;
   margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
+  margin-top: 12px;
+  padding-bottom: 3px;
+  padding-left: 24px;
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
@@ -41,7 +41,6 @@ export const Img = styled(Image) `
 
 export const Container = styled.div`
   margin: 0 auto;
-  max-width: 960px;
 `
 
 export const TwoColumnGrid = styled.div`

@@ -16,27 +16,27 @@ const ProductPage = ({ data }) => {
   const product = data.shopifyProduct
   return (
     <>
-      <SEO title={product.title} description={product.description} />
-      <Container>
-        <TwoColumnGrid>
-          <GridLeft>
-            {product.images.map(image => (
-              <Img
-                fluid={image.localFile.childImageSharp.fluid}
-                key={image.id}
-                alt={product.title}
-              />
-            ))}
-          </GridLeft>
-          <GridRight>
-            <ProductTitle>{product.title}</ProductTitle>
-            <ProductDescription
-              dangerouslySetInnerHTML={{ __html: product.descriptionHtml }}
+    <SEO title={product.title} description={product.description} />
+    <Container>
+      <TwoColumnGrid>
+        <GridLeft>
+          {product.images.map(image => (
+            <Img
+              fluid={image.localFile.childImageSharp.fluid}
+              key={image.id}
+              alt={product.title}
             />
-            <ProductForm product={product} />
-          </GridRight>
-        </TwoColumnGrid>
-      </Container>
+          ))}
+        </GridLeft>
+        <GridRight>
+          <ProductTitle>{product.title}</ProductTitle>
+          <ProductDescription
+            dangerouslySetInnerHTML={{ __html: product.descriptionHtml }}
+          />
+          <ProductForm product={product} />
+        </GridRight>
+      </TwoColumnGrid>
+    </Container>
     </>
   )
 }
