@@ -23,9 +23,10 @@ export const ProductTitle = styled.h1`
     word-wrap: break-word;
     font-family: 'Helvetica', 'Helvetica', sans-serif;
     font-weight: 400;
-    margin: 32px 0px 0.5rem;
+    margin: 32px 59px -0.5rem;
     line-height: 1.4;
     width: 219px;
+    text-align: center;
     }
 `
 
